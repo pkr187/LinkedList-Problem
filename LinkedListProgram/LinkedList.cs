@@ -6,10 +6,13 @@ using System.Threading.Tasks;
 
 namespace LinkedListProgram
 {
-    public class LinkedList
+    internal class LinkedList
     {
         internal Node head;
-        //uc1
+        ///<summary>
+        ///UC-1 - Create Simple LinkedList
+        ///</summary>
+        ///Adding Element in LinkedList
         internal void Add(int data)
         {
             Node node = new Node(data);
@@ -28,10 +31,10 @@ namespace LinkedListProgram
             }
             Console.WriteLine("{0} inserted into linked list", node.data);
         }
-        /// <summary>
-        /// Method create "AddInReverseOrder" 
-        /// </summary>
-        /// <param name="data"></param>
+        ///<summary>
+        ///UC-2
+        ///</summary>
+        ///Adding Element in Reverse Order in LinkedList
         internal void AddInReverseOrder(int data)
         {
             Node newNode = new Node(data);
@@ -41,15 +44,15 @@ namespace LinkedListProgram
             }
             else
             {
-                Node temp = this.head;
-                head = newNode;
-                head.next = temp;
+                Node temp = this.head;//70
+                head = newNode;//30
+                head.next = temp;//70->30
             }
         }
-        /// <summary>
-        /// Method create "Append" 
-        /// </summary>
-        /// <param name="data"></param>
+        ///<summary>
+        //UC3
+        ///</summary>
+        //Append the LinkedList
         public void Append(int data)
         {
             Node node = new Node(data);
@@ -66,45 +69,42 @@ namespace LinkedListProgram
                 }
                 node1.next = node;
             }
-            Console.WriteLine("{0} append into linked list", node.data);
+            Console.WriteLine("{0} appended into linked list", node.data);
         }
-        /// <summary>
-        /// Method create "InsertAtParticularPosition"
-        /// </summary>
-        /// <param name="Position"></param>
-        /// <param name="data"></param>
-        /// <returns></returns>
-        internal Node InsertAtParticularPosition(int Position, int data)
+        ///<summary>
+        ///UC-4
+        ///Inserting Element At Particular Position.
+        ///</summary>
+        ///<param name="position">The position.</param>
+        ///<param name="data">The data.</param>
+        internal void InsertAtGivenPosition(int position, int data)
         {
             Node node = new Node(data);
-            if (Position < 1)
+            if (position < 1)
             {
                 Console.WriteLine("Invalid Position");
-
             }
-            else if (Position == 1)
+            else if (position == 1)
             {
-                node.next = this.head;
+                node.next = head;
                 head = node;
             }
             else
             {
                 Node temp = head;
-                while (Position > 2)
+                while (position > 2)
                 {
                     temp = temp.next;
-                    Position--;
+                    temp.next = node;
                 }
-                node.next = temp.next;
-                temp.next = node;
             }
-            return node;
         }
-        /// <summary>
-        /// Method create "Pop"
-        /// </summary>
-        /// <returns></returns>
-        public Node Pop()
+        ///<summary>
+        ///UC-5
+        ///Delete the first element from Linedlist.
+        ///</summary>
+        ///<returns></returns>
+        public Node PopFirst()
         {
             Node node = head;
             if (head == null)
@@ -117,10 +117,11 @@ namespace LinkedListProgram
             }
             return node;
         }
-        /// <summary>
-        /// Mwthod Create "PopLast"
-        /// </summary>
-        /// <returns></returns>
+        ///<summary>
+        ///UC-6
+        ///Delete the last element from Linedlist.
+        ///</summary>
+        ///<returns></returns>
         public Node PopLast()
         {
             if (head == null)
@@ -135,30 +136,27 @@ namespace LinkedListProgram
                 {
                     n = n.next;
                 }
-
                 n.next = null;
                 return n;
             }
         }
-        /// <summary>
-        /// Method created = Search
-        /// </summary>
-        /// <param name="data"></param>
-        /// <returns></returns>
+        ///<summary>
+        ///UC-7
+        ///Search element from Linkedlist.
+        ///</summary>
+        ///<returns></returns>
         public int Search(int data)
         {
-            int count = 0;
+            int count = 1;
             Node temp = head;
             if (this.head == null)
             {
-                Console.WriteLine("Element Not found plz try Again");
                 return 0;
             }
             while (temp != null)
             {
                 if (temp.data == data)
                 {
-                    Console.WriteLine("Element Found sucessfully");
                     return count;
                 }
                 temp = temp.next;
@@ -166,81 +164,21 @@ namespace LinkedListProgram
             }
             return 0;
         }
-        public void InsertNodeAfterParticularNode(int data, int dataToSearch)
-        {
-            int position = Search(dataToSearch);
-            if (position == 0)
-            {
-                Console.WriteLine("No such element found");
-                return;
-            }
-            Node node = new Node(data);
-            Node temp = this.head;
-            for (int i = 1; i < position; i++)
-            {
-                temp = temp.next;
-            }
-            node.next = temp.next;
-            temp.next = node;
-        }
-        public void DeleteNodeAtparticularPosition(int Position)
-        {
-            if (this.head == null)
-            {
-                Console.WriteLine("LinkedList is empty");
-                return;
-            }
-            Node temp = this.head;
-            if (Position == 0)
-            {
-                this.head = temp.next;
-                return;
-            }
-
-            for (int i = 0; temp != null && i < Position - 1; i++)
-            {
-                temp = temp.next;
-            }
-            if (temp == null || temp.next == null)
-            {
-                return;
-            }
-            Node next = temp.next.next;
-            temp.next = next;
-        }
-        public int Size()
-        {
-            int count = 0;
-            Node temp = head;
-            if (temp == null)
-            {
-                return 0;
-            }
-            while (temp != null)
-            {
-                count++;
-                temp = temp.next;
-            }
-            Console.WriteLine($"Linked List Size is {count}");
-            return count;
-        }
-        /// <summary>
-        /// Dispaly Method
-        /// </summary>
         internal void Display()
         {
             Node temp = this.head;
             if (temp == null)
             {
-                Console.WriteLine("Linkedlist is empty");
+                Console.WriteLine("Linked List is Empty");
+                return;
             }
             while (temp != null)
             {
-                Console.WriteLine(temp.data + " ");
+                Console.Write(temp.data + " " + "\n");
                 temp = temp.next;
             }
         }
-
     }
 }
+    
 
