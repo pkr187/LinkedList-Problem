@@ -32,6 +32,30 @@ namespace LinkedListProgram
             this.top = node;
             Console.WriteLine("{0} pushed to stack", value);
         }
+        ///<summary>
+        ///UC-11
+        ///Peek & Pop from Stack
+        ///</summary>
+        ///<returns></returns>
+        internal void Peek() //to show the top most element
+        {
+            if (this.top == null)
+            {
+                Console.WriteLine("Stack is empty");
+                return;
+            }
+            Console.WriteLine("{0} is in the top of the stack", this.top.data);
+        }
+        internal void Pop()
+        {
+            if (this.top == null)
+            {
+                Console.WriteLine("Stack is empty, Deletion is not Possible");
+                return;
+            }
+            Console.WriteLine("Value Popped is {0}", this.top.data);
+            this.top = this.top.next;
+        }
         internal void Display()
         {
             Node temp = this.top;
