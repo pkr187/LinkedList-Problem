@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32811.315
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedListProblem", "LinkedListProblem.csproj", "{8331B420-6CFA-424C-9747-860A4272FABA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedListProblem", "LinkedListProblem.csproj", "{24CDA20D-9110-4F70-9FBE-89DD077C7E70}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8331B420-6CFA-424C-9747-860A4272FABA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8331B420-6CFA-424C-9747-860A4272FABA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8331B420-6CFA-424C-9747-860A4272FABA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8331B420-6CFA-424C-9747-860A4272FABA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24CDA20D-9110-4F70-9FBE-89DD077C7E70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24CDA20D-9110-4F70-9FBE-89DD077C7E70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24CDA20D-9110-4F70-9FBE-89DD077C7E70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24CDA20D-9110-4F70-9FBE-89DD077C7E70}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {27ACD009-C666-4111-8B59-2A728FA3F622}
+		SolutionGuid = {F307EBD1-F193-4CE0-88CF-3EFEDEF319F1}
 	EndGlobalSection
 EndGlobal

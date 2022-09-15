@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LinkedListProblem
 {
-    public class LinkedList
+    public  class LinkedList
     {
         internal Node head;
         //uc1
@@ -27,6 +27,24 @@ namespace LinkedListProblem
                 temp.next = node;
             }
             Console.WriteLine("{0} inserted into linked list", node.data);
+        }
+        /// <summary>
+        /// Method create "AddInReverseOrder" 
+        /// </summary>
+        /// <param name="data"></param>
+        internal void AddInReverseOrder(int data)
+        {
+            Node newNode = new Node(data);
+            if (this.head == null)
+            {
+                this.head = newNode;
+            }
+            else
+            {
+                Node temp = this.head;
+                head = newNode;
+                head.next = temp;
+            }
         }
         internal void Display()
         {
