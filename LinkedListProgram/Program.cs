@@ -2,10 +2,11 @@
 
 LinkedList list = new LinkedList();
 LinkedListStack stack = new LinkedListStack();
+LinkedListQueue queue = new LinkedListQueue();
 bool flag = true;
 while (flag)
 {
-    Console.WriteLine("Select Program\n 1.Create LinkedList\n 2.Add Element in Reverse Order\n 3.Append Element in LinkedList\n 4.Insert Element At Particular Position\n 5.Delete First Element In LinkedList\n 6.Delete Last Element In LinkedList\n 7.Search Element In LinkedList\n 8.Insert Node After Particular Node\n 9.Delete Node & Find Size\n 10.Create Stack\n 11.Peek & Pop from Stack");
+    Console.WriteLine("Select Program\n 1.Create LinkedList\n 2.Add Element in Reverse Order\n 3.Append Element in LinkedList\n 4.Insert Element At Particular Position\n 5.Delete First Element In LinkedList\n 6.Delete Last Element In LinkedList\n 7.Search Element In LinkedList\n 8.Insert Node After Particular Node\n 9.Delete Node & Find Size\n 10.Create Stack\n 11.Peek & Pop from Stack\n 12.Create Queue");
     int option = Convert.ToInt32(Console.ReadLine());
     switch (option)
     {
@@ -93,6 +94,13 @@ while (flag)
             stack.Peek();
             stack.Pop();
             stack.Display();
+            break;
+
+        case 12:
+            queue.Enqueue(56);
+            queue.Enqueue(30);
+            queue.Enqueue(70);
+            queue.Display();
             break;
     }
 }
