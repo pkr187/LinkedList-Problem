@@ -164,6 +164,28 @@ namespace LinkedListProgram
             }
             return 0;
         }
+        ///<summary>
+        ///UC-8
+        ///Insert Node After Particular Node.
+        ///</summary>
+        ///<returns></returns>
+        public void InsertNodeAfterParticularNode(int data, int dataToSearch)
+        {
+            int position = Search(dataToSearch);
+            if (position == 0)
+            {
+                Console.WriteLine("No such element found");
+                return;
+            }
+            Node node = new Node(data);
+            Node temp = this.head;
+            for (int i = 1; i < position; i++)
+            {
+                temp = temp.next;
+            }
+            node.next = temp.next;
+            temp.next = node;
+        }
         internal void Display()
         {
             Node temp = this.head;
