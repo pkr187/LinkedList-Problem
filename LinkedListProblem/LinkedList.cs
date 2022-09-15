@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LinkedListProblem
 {
-    public  class LinkedList
+    public class LinkedList
     {
         internal Node head;
         //uc1
@@ -100,6 +100,24 @@ namespace LinkedListProblem
             }
             return node;
         }
+        /// <summary>
+        /// Method create "Pop"
+        /// </summary>
+        /// <returns></returns>
+        public Node Pop()
+        {
+            Node node = head;
+            if (head == null)
+            {
+                Console.WriteLine("Linked List is Empty");
+            }
+            else
+            {
+                head = head.next;
+            }
+            return node;
+        }
+
         /// <summary>
         /// Dispaly Method
         /// </summary>

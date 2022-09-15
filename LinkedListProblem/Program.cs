@@ -9,7 +9,7 @@
             while (flag)
             {
                 Console.WriteLine("please Enter Your option :");
-                Console.WriteLine("1.Create a Linked List \n2.Add the Elemente in Reverse Order \n3.Appending the Elemente \n4.Insert At Particular Position  ");
+                Console.WriteLine("1.Create a Linked List \n2.Add the Elemente in Reverse Order \n3.Appending the Elemente \n4.Insert At Particular Position \n5.Delete the first element in linked list  ");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -33,6 +33,10 @@
                         break;
                     case 4:
                         list.InsertAtParticularPosition(2, 65);
+                        list.Display();
+                        break;
+                    case 5:
+                        list.Pop();
                         list.Display();
                         break;
                 }
