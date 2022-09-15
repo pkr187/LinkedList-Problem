@@ -4,7 +4,7 @@ LinkedList list = new LinkedList();
 bool flag = true;
 while (flag)
 {
-    Console.WriteLine("Select Program\n 1.Create LinkedList\n 2.Add Element in Reverse Order\n 3.Append Element in LinkedList\n 4.Insert Element At Particular Position\n 5.Delete First Element In LinkedList\n 6.Delete Last Element In LinkedList\n 7.Search Element In LinkedList\n 8.Insert Node After Particular Node.");
+    Console.WriteLine("Select Program\n 1.Create LinkedList\n 2.Add Element in Reverse Order\n 3.Append Element in LinkedList\n 4.Insert Element At Particular Position\n 5.Delete First Element In LinkedList\n 6.Delete Last Element In LinkedList\n 7.Search Element In LinkedList\n 8.Insert Node After Particular Node\n 9.Delete Node & Find Size");
     int option = Convert.ToInt32(Console.ReadLine());
     switch (option)
     {
@@ -65,6 +65,16 @@ while (flag)
             list.Add(30);
             list.Add(70);
             list.InsertNodeAfterParticularNode(40, 30);
+            list.Display();
+            break;
+
+        case 9:
+            list.Add(56);
+            list.Add(30);
+            list.Add(40);
+            list.Add(70);
+            list.DeleteNodeAtParticularPosition(2);
+            list.Size();
             list.Display();
             break;
     }
