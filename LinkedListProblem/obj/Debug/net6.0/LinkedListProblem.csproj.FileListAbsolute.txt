@@ -1,0 +1,15 @@
+C:\helllo\LinkedListProblem\bin\Debug\net6.0\LinkedListProblem.exe
+C:\helllo\LinkedListProblem\bin\Debug\net6.0\LinkedListProblem.deps.json
+C:\helllo\LinkedListProblem\bin\Debug\net6.0\LinkedListProblem.runtimeconfig.json
+C:\helllo\LinkedListProblem\bin\Debug\net6.0\LinkedListProblem.dll
+C:\helllo\LinkedListProblem\bin\Debug\net6.0\LinkedListProblem.pdb
+C:\helllo\LinkedListProblem\obj\Debug\net6.0\LinkedListProblem.csproj.AssemblyReference.cache
+C:\helllo\LinkedListProblem\obj\Debug\net6.0\LinkedListProblem.GeneratedMSBuildEditorConfig.editorconfig
+C:\helllo\LinkedListProblem\obj\Debug\net6.0\LinkedListProblem.AssemblyInfoInputs.cache
+C:\helllo\LinkedListProblem\obj\Debug\net6.0\LinkedListProblem.AssemblyInfo.cs
+C:\helllo\LinkedListProblem\obj\Debug\net6.0\LinkedListProblem.csproj.CoreCompileInputs.cache
+C:\helllo\LinkedListProblem\obj\Debug\net6.0\LinkedListProblem.dll
+C:\helllo\LinkedListProblem\obj\Debug\net6.0\refint\LinkedListProblem.dll
+C:\helllo\LinkedListProblem\obj\Debug\net6.0\LinkedListProblem.pdb
+C:\helllo\LinkedListProblem\obj\Debug\net6.0\LinkedListProblem.genruntimeconfig.cache
+C:\helllo\LinkedListProblem\obj\Debug\net6.0\ref\LinkedListProblem.dll

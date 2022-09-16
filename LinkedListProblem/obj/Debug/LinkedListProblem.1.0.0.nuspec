@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>LinkedListProblem</id>
+    <version>1.0.0</version>
+    <authors>LinkedListProblem</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net6.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\helllo\LinkedListProblem\bin\Debug\net6.0\LinkedListProblem.runtimeconfig.json" target="lib\net6.0\LinkedListProblem.runtimeconfig.json" />
+    <file src="C:\helllo\LinkedListProblem\bin\Debug\net6.0\LinkedListProblem.dll" target="lib\net6.0\LinkedListProblem.dll" />
+  </files>
+</package>
